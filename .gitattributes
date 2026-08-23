@@ -1,0 +1,12 @@
+# keep text file using linux language
+* text=auto eol=lf 
+# shell script work properly on linux 
+*.sh text eol=lf 
+# consider .png images to binary not as text
+*.png binary 
+# thi tells github that files inside this are documetation so they should not affect the lanhuage percentage
+docs/** linguist-documentation 
+# tell github that kubernetes files are yaml inside k8s folder
+k8s/** linguist-language=YAML 
+# tell github this folder container 3rd party code so it should not be counted as language part 
+vendor/** linguist-vendored 
